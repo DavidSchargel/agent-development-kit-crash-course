@@ -1,4 +1,30 @@
 .env
 __pycache__/
 .venv/
+
+
+
+# Database files
 *.db
+*.sqlite3
+
+
+
+
+# ------------------ Python ------------------
+
+# Python build
+.eggs/
+dist/
+dist-lite/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+!js/build/
+!js/build/dist/
+__tmp/*
+*.pyi
+.python-version
+=23.2
