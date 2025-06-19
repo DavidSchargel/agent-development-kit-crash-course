@@ -145,14 +145,17 @@ type = "simple"
       --color always
     """
 
- [tool.poe.tasks.test]
-    help = "Test this app"
+  [tool.poe.tasks.test]
+      help = "Test this app"
 
-    [[tool.poe.tasks.test.sequence]]
-    cmd = "uv run coverage run"
+      [[tool.poe.tasks.test.sequence]]
+      cmd = "uv run coverage run"
 
-    [[tool.poe.tasks.test.sequence]]
-    cmd = "uv run coverage report"
+      [[tool.poe.tasks.test.sequence]]
+      cmd = "uv run coverage report"
 
-    [[tool.poe.tasks.test.sequence]]
-    cmd = "uv run coverage xml"
+      [[tool.poe.tasks.test.sequence]]
+      cmd = "uv run coverage xml"
+
+[tool.ty.rules]
+    unresolved-import = "ignore"
