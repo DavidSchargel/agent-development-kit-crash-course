@@ -1,0 +1,13 @@
+_commit: v1.5.1
+_src_path: gh:superlinear-ai/substrate
+author_email: david@schargel.com
+author_name: David Schargel
+project_description: Teaches the various ways of building agents using Google ADK
+project_name: Agent Development Kit (ADK) Masterclass with Brandon
+project_type: app
+project_url: https://github.com/DavidSchargel/agent-development-kit-crash-course
+python_version: '3.13'
+typing: optional
+with_conventional_commits: true
+with_fastapi_api: false
+with_typer_cli: false
