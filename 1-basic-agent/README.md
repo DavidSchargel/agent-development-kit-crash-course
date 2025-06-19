@@ -3,6 +3,7 @@
 ## What is an ADK Agent?
 
 The `LlmAgent` (often aliased simply as `Agent`) is a core component in ADK that acts as the "thinking" part of your application. It leverages the power of a Large Language Model (LLM) for:
+
 - Reasoning
 - Understanding natural language
 - Making decisions
@@ -23,7 +24,7 @@ parent_folder/
         .env              # Environment variables
 ```
 
-### Essential Components:
+### Essential Components
 
 1. **`__init__.py`**
    - Must import the agent module: `from . import agent`
@@ -42,15 +43,19 @@ This structure ensures that ADK can automatically discover and load your agent w
 ## Key Components
 
 ### 1. Identity (`name` and `description`)
+
 - **name** (Required): A unique string identifier for your agent
 - **description** (Optional, but recommended): A concise summary of the agent's capabilities. Used for other agents to determine if they should route a task to this agent.
 
 ### 2. Model (`model`)
+
 - Specifies which LLM powers the agent (e.g., "gemini-2.0-flash")
 - Affects the agent's capabilities, cost, and performance
 
 ### 3. Instructions (`instruction`)
+
 The most critical parameter for shaping your agent's behavior. It defines:
+
 - Core task or goal
 - Personality or persona
 - Behavioral constraints
@@ -58,7 +63,9 @@ The most critical parameter for shaping your agent's behavior. It defines:
 - Desired output format
 
 ### 4. Tools (`tools`)
+
 Optional capabilities beyond the LLM's built-in knowledge, allowing the agent to:
+
 - Interact with external systems
 - Perform calculations
 - Fetch real-time data
@@ -68,7 +75,8 @@ Optional capabilities beyond the LLM's built-in knowledge, allowing the agent to
 
 This example uses the same virtual environment created in the root directory. Make sure you have:
 
-1. Activated the virtual environment from the root directory:
+### 1. Activated the virtual environment from the root directory
+
 ```bash
 # macOS/Linux:
 source ../.venv/bin/activate
@@ -78,9 +86,10 @@ source ../.venv/bin/activate
 ..\.venv\Scripts\Activate.ps1
 ```
 
-2. Set up your API key:
-   - Rename `.env.example` to `.env` in the greeting_agent folder
-   - Add your Google API key to the `GOOGLE_API_KEY` variable in the `.env` file
+### 2. Set up your API key
+
+- Rename `.env.example` to `.env` in the greeting_agent folder
+- Add your Google API key to the `GOOGLE_API_KEY` variable in the `.env` file
 
 ## Running the Example
 
@@ -88,19 +97,21 @@ To run this basic agent example, you'll use the ADK CLI tool which provides seve
 
 1. Navigate to the 1-basic-agent directory containing your agent folder.
 2. Start the interactive web UI:
+
 ```bash
 adk web
 ```
 
-3. Access the web UI by opening the URL shown in your terminal (typically http://localhost:8000)
+### 3. Access the web UI by opening the URL shown in your terminal (typically <http://localhost:8000>)
 
-4. Select your agent from the dropdown menu in the top-left corner of the UI
+### 4. Select your agent from the dropdown menu in the top-left corner of the UI
 
-5. Start chatting with your agent in the textbox at the bottom of the screen
+### 5. Start chatting with your agent in the textbox at the bottom of the screen
 
 ### Troubleshooting
 
 If your agent doesn't appear in the dropdown menu:
+
 - Make sure you're running `adk web` from the parent directory (1-basic-agent), not from inside the agent directory
 - Check that your `__init__.py` properly imports the agent module
 - Verify that `agent.py` defines a variable named `root_agent`

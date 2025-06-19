@@ -1,3 +1,9 @@
+"""
+Greeting Agent.
+
+This agent greets the user by name.
+"""
+
 from google.adk.agents import Agent
 
 root_agent = Agent(
@@ -6,7 +12,7 @@ root_agent = Agent(
     model="gemini-2.0-flash",
     description="Greeting agent",
     instruction="""
-    You are a helpful assistant that greets the user. 
+    You are a helpful assistant that greets the user.
     Ask for the user's name and greet them by name.
     """,
 )
