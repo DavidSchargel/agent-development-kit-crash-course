@@ -73,8 +73,13 @@ repos:
         require_serial: true
         language: system
         types_or: [python, pyi]
-      - id: mypy
-        name: mypy
-        entry: uv run mypy
+      # - id: mypy
+      #   name: mypy
+      #   entry: uv run mypy
+      #   language: system
+      #   types: [python]
+      - id: ty
+        name: ty
+        entry: uv run ty
         language: system
         types: [python]
