@@ -1,0 +1,9 @@
+config:
+  MD040: false
+  MD032: false
+ignores:
+  files:
+    - plan.md
+    - "**/plan.md"
+    - /Users/david/.codeium/windsurf/brain/e047d508-18b8-4e50-980d-8c4b6be8a4c8/plan.md
+    - /Users/david/.codeium/windsurf/brain/68be2aed-2ab8-45fa-a87c-b245a9c5aa4d/plan.md
