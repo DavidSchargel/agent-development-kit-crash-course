@@ -35,7 +35,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "google-adk", specifier = ">=1.4.1" },
+    { name = "google-adk", specifier = ">=1.4.2" },
     { name = "google-generativeai", specifier = ">=0.8.5" },
     { name = "litellm", specifier = ">=1.66.3" },
     { name = "mypy", specifier = ">=1.16.1" },
@@ -584,7 +584,7 @@ wheels = [
 
 [[package]]
 name = "google-adk"
-version = "1.4.1"
+version = "1.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -614,9 +614,9 @@ dependencies = [
     { name = "uvicorn" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/c0/3585b6e731a144effd80a79400a46b25b65d0b65bdd535ccb51b2db01fe3/google_adk-1.4.1.tar.gz", hash = "sha256:fc29a3840343fae660447e594d4d4851176ddc970dcaae3082bc97f403e7e832", size = 1150267, upload-time = "2025-06-19T01:53:41.348Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/31/0e/c68b45d76b8634916054557827cac3575a8336fc72ef3aa29afeed4d3a3c/google_adk-1.4.2.tar.gz", hash = "sha256:f1d4ccf109aaeaf2af2ffd419432b337499e38d008e59944c036b84206f2806e", size = 1153068, upload-time = "2025-06-20T22:40:47.847Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/53/d3/c178d0e5af8c4905495d842c3f1fc78e299d344948f745164c6cb5486b29/google_adk-1.4.1-py3-none-any.whl", hash = "sha256:f789f27eab16c499719fa66cd9033ab69a34c381368df8e43a3f9bebdcf7e3ac", size = 1316934, upload-time = "2025-06-19T01:53:39.212Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/fd/301204b06c9f306951f11bb00a9a2c0a96952c66a241161ebc72a39818aa/google_adk-1.4.2-py3-none-any.whl", hash = "sha256:5987096b4ad854aa2f9faa923e1632a65d69d21794766e44683f36505382ab6a", size = 1321176, upload-time = "2025-06-20T22:40:46.41Z" },
 ]
 
 [[package]]
