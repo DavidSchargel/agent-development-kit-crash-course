@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "allow": ["Bash(find:*)", "Bash(uv run ty:*)", "Bash(pre-commit run:*)"],
+    "deny": []
+  }
+}
