@@ -1,3 +1,10 @@
+# Keep private files and folder to myself and not in public repositories
+.windsurf/rules/
+.claude/
+CLAUDE.md
+docs/rules/
+
+
 # Coverage.py
 htmlcov/
 reports/
