@@ -2,7 +2,7 @@
 trigger: always_on
 ---
 
-# Postgres Database Functions rules
+# Postgres Database Rules
 
 **Last verified:** 2025-06-22
 **Last updated:** 2025-06-22
